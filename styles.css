@@ -5,29 +5,35 @@
   
   body {
     font-family: Arial;
-    padding: 10px;
-   
-    /* max-width: 1200px; */
+    padding: 10px;  
     margin: 0 auto;
     background-image: url("images/back.jpg");
+  
     background-size: cover;
-  position: relative;
-    
-    
-
+    position: relative;
     color: #9E9E9E;
+    border: 2px solid red;
+  }
+  .logo1 {
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+
+  .a {
+    max-width: 1200px;
+    margin: 0 auto;
   }
   body::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-   
     height: 100%;
     width: 100%;
-    position: absolute;
-    z-index: 1;
-    background-color: rgba(16, 0, 43, 0.1);
+   
+    z-index: -1; 
+     background-color: rgba(16, 0, 43, 0.8); 
  
   }
   
@@ -37,27 +43,32 @@
     text-align: center;
     background: #240046;
     color: #d3d3d3;
+    border: 2px solid orange;
   }
   
   .header h1 {
     font-size: 50px;
     color: #d3d3d3;
+    border: 2px solid pink;
   }
   
   /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
     background-color: #333;
+    border: 2px solid blue;
   }
   
   /* Style the topnav links */
   .topnav a {
-    float: left;
-    display: block;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border: 2px solid orange;
   }
   
   /* Change color on hover */
@@ -73,6 +84,7 @@
   .leftcolumn {   
     float: left;
     width: 75%;
+    border: 2px solid greenyellow;
   }
   
   /* Right column */
@@ -81,13 +93,21 @@
     width: 25%;
     
     padding-left: 20px;
+    border: 2px solid orange;
   }
   
   /* Fake image */
+  
   .fakeimg {
-    background-color: #aaa;
+    /* background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 20px; */
+    border: 2px solid cyan;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
   }
   
   /* Add a card effect for articles */
@@ -95,6 +115,7 @@
     background-color: black;
     padding: 20px;
     margin-top: 20px;
+    border: 2px solid green;
   }
   
   /* Clear floats after the columns */
@@ -128,7 +149,7 @@
     }
   }
   .quote {
-    background-color: rgba(132, 222, 2, 0.3); /* Kolor tła cytatu */
+    background-color: grey; /* Kolor tła cytatu */
     font-style: italic;
     font-size: 2rem;
     max-width: 800px; /* Maksymalna szerokość cytatu */
@@ -136,4 +157,103 @@
     margin: 20px auto;
     padding: 15px; /* Dodanie paddingu */
     border-radius: 10px; /* Zaokrąglone rogi */
+  }
+
+  .container {
+    position: relative;
+    /* width: 75%; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+    border: 2px solid red;
+  }
+  .container .box {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    background: #000;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+  }
+  .container:hover .box {
+    transform: rotateY(25deg);
+  }
+  .container .box:hover ~ .box {
+    transform: rotateY(-25deg);
+  }
+  .container .box:hover {
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+  }
+  .container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container .box .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,#f00,#000);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+  }
+  .container .box:hover .imgBx:before {
+    opacity: 1;
+  }
+  .container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+  .container .box .content h2 {
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+  }
+  .container .box:hover .content h2 {
+    transform: translateY(0px);
+  }
+  .container .box .content p {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+  }
+  .container .box:hover .content p {
+    transform: translateY(0px);
   }
