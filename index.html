@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>;za - Marie Curie-Sklodowska</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'YOUR_TRACKING_ID');
+</script>
 </head>
 <body>
 <div class="a">
 <div class="header">
   <div class="topnav">
     <img class="logo1" src="images/logo-kk.png" alt="project" />
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#" style="float:right">Link</a>
+
+   
+    <a href="#links" style="float:right">Links</a>
+    <a href="#quote" style="float:right">About</a>
+     <a href="#header" style="float:right">Home</a>
+     
   </div>
-  <h1>Marie Curie-Sklodowska</h1>
-  <p>The pioneering scientist who discovered radioactivity</p>
+  <h1 class="linear-wipe" id="header">Marie Curie-Sklodowska</h1>
+  <h3>The pioneering scientist who discovered radioactivity</h3>
 </div>
 
 
@@ -24,10 +37,43 @@
 <div class="row">
     <div class="leftcolumn">
     <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-       <div class="quote">
+
+      <div class="fakeimg">
+        
+               <div class="container">
+          <div class="box">
+            <div class="imgBx">
+              <img src="images/c1.jpeg" style="height: 275px !important; object-fit: fill;">
+            </div>
+            <div class="content">
+              <div>
+                <h2>Discoveries</h2>
+                <p>    The new element was named polonium (symbol Po, atomic number 84) — referencing Marie's country of origin;
+                   the next chemical element — radium (symbol Ra, atomic number 88).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBx">
+              <img src="images/c2.jpg" style="height: 275px !important; object-fit: fill;">
+            </div>
+            <div class="content">
+              <div>
+                <h2>Nobel Prize</h2>
+                <p>1903 - jointly with Pierre Curie and Henri Becquerel for research on radioactivity (Nobel Prize in Physics).
+
+                  1911 - for studies on radium and its compounds (Nobel Prize in Chemistry).
+                </p>
+              </div>
+            </div>
+          </div>
+  
+        </div> 
+        </div>
+
+
+       <div class="quote" id="quote">
         <p>"Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less."</p>
         <p>-- Marie Curie</p>
       </div>
@@ -35,41 +81,34 @@
 
  
     <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <p> Marie Skłodowska-Curie, one of the most outstanding figures in the history of science, was born on November 7, 1867, in Warsaw. Her life and achievements revolutionized many fields, and her contributions to science continue to inspire generations.
-      Education
+     
+
+      <p>Marie Sklodowska-Curie, one of the most outstanding figures in the history of science, was born on November 7, 1867, in Warsaw. Her life and achievements revolutionized many fields, and her contributions to science continue to inspire generations.</p>
       
-      Marie demonstrated extraordinary abilities from a young age. After finishing school in Warsaw, she was unable to study at Polish universities due to restrictions on women. In 1891, she moved to Paris, where she began her studies at the Sorbonne. She graduated with honors, earning a doctorate in physical sciences.
-      Scientific Discoveries
+      <h3>Education</h3>
+      <p>From a young age, Marie demonstrated extraordinary abilities. After finishing school in Warsaw, she was unable to study at Polish universities due to restrictions on women. In 1891, she moved to Paris, where she began her studies at the Sorbonne. She graduated with honors, earning a doctorate in physical sciences.</p>
       
-      Together with her husband, Pierre Curie, Marie discovered two chemical elements: polonium and radium. Their work on radioactivity was groundbreaking and contributed to the development of radiochemistry. In 1903, for their joint research on radioactivity, Marie and Pierre Curie, along with Henri Becquerel, were awarded the Nobel Prize in Physics. Marie became the first woman to receive this award.
-      Further Achievements
+      <h3>Scientific Discoveries</h3>
+      <p>Together with her husband, Pierre Curie, she discovered two chemical elements: polonium and radium. Their work on radioactivity was groundbreaking and contributed to the development of radiochemistry. In 1903, for their joint research on radioactivity, Marie and Pierre Curie, along with Henri Becquerel, were awarded the Nobel Prize in Physics. Marie became the first woman to receive this award.</p>
       
-      After her husband’s death in 1906, Marie continued her research. In 1911, she received a second Nobel Prize, this time in Chemistry, for her studies on radium and its compounds. She was the first person to win Nobel Prizes in two different scientific fields.
-      Contribution to Medicine
+      <h3>Further Achievements</h3>
+      <p>After her husband’s death in 1906, Marie continued her research. In 1911, she received a second Nobel Prize, this time in Chemistry, for her studies on radium and its compounds. She was the first person to win Nobel Prizes in two different scientific fields.</p>
       
-      Marie Skłodowska-Curie also contributed to the field of medicine, particularly in radiology. Her research on radioactivity was crucial for cancer treatment. During World War I, she organized mobile radiology units that helped diagnose wounded soldiers.
-      Final Years and Legacy
+      <h3>Contribution to Medicine</h3>
+      <p>Marie Skłodowska-Curie also contributed to the field of medicine, especially in radiology. Her research on radioactivity was crucial for cancer treatment. During World War I, she organized mobile radiology units that helped diagnose wounded soldiers.</p>
       
-      Marie passed away on July 4, 1934, due to radiation-related illness, likely caused by prolonged exposure to radiation. After her death, she was buried alongside her husband in the Panthéon in Paris. Her achievements and life became an inspiration for many women who sought to find their place in science.
-      Conclusion
+      <h3>Final Years and Legacy</h3>
+      <p>Marie passed away on July 4, 1934, due to a radiation-related illness, likely caused by prolonged exposure to radiation. After her death, she was buried alongside her husband in the Panthéon in Paris. Her achievements and life became an inspiration for many women who sought to find their place in science.</p>
       
-      Marie Skłodowska-Curie was not only an exceptional scientist but also a pioneer in the fight for gender equality in science. Her life and work demonstrate how passion and determination can lead to groundbreaking discoveries that change the world. Her legacy endures to this day, inspiring future generations of scientists.
-    
-</p>
-    
-    
-    
+      <h3>Conclusion</h3>
+      <p>Marie Skłodowska-Curie was not only an exceptional scientist but also a pioneer in the fight for gender equality in science. Her life and work demonstrate how passion and determination can lead to groundbreaking discoveries that change the world. Her legacy endures to this day, inspiring future generations of scientists.</p>
+ 
     </div>
     </div>
  
   <div class="rightcolumn">
     <div class="card">
-      <h2>Here's a timeline of Marie Curie's life:</h2>
+      <h3>Here's a timeline of Marie Curie's life:</h3>
            <ul>
         <li><strong>1867</strong> - Born in Warsaw, Poland</li>
         <li><strong>1891</strong> - Moves to Paris to study at the Sorbonne University</li>
@@ -83,22 +122,52 @@
       
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+   
+      <div class="fakeimg">
+
+        <div class="container">
+          <div class="box" style="width: 200px !important;">
+            <div class="imgBx">
+              <img src="images/s1.jpg" >
+            </div>
+            <div class="content">
+              <div>
+                <h2>Monument</h2>
+                <p>Her successes contributed to changing the perception of women in science and served as an inspiration for many women.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box" style="width: 200px !important;">
+            <div class="imgBx">
+              <img src="images/s2.jpg">
+            </div>
+            <div class="content">
+              <div>
+                <h2>Pioneering</h2>
+                <p>She is the only person to have received Nobel Prizes in two different scientific fields (Physics and Chemistry).
+                </p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+   
     </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-      kjdfgzhjkzdfhjkzx jxzcvghzjfghjz zjxcvhnjxfvhjfvbh jzvhjcvhb
-      sdkjghfzujdsgh zjxvghudzfhgv zjxchvuvh zjxfvhufvchbuidfh
+    <div class="card" id="links">
+      <h3>Links</h3>
+          <a href="https://www.nobelprize.org/womenwhochangedscience/stories/marie-curie">Nobel Prize</a>
+    <a href="https://www.britannica.com/biography/Marie-Curie">Britannica</a>
+    <a href="https://en.wikipedia.org/wiki/Maria_Curie-Sk%C5%82odowska_University">Wikipedia</a>
+
     </div>
   </div>
  </div>
 
 <div class="footer">
-  <img class="logo2" src="favicon-32x32.png" alt="project" />
+  <img class="logo2" style="width:20px; height: 20px" src="favicon-32x32.png" alt="project" />
   <span>&copy; 2024 ;za. All rights reserved.</span>
 </div>
 
